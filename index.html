@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>IngressoOnline - Home</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">	
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 <body>
 	<header>
@@ -16,19 +17,28 @@
 				IngressoOnline.com
 			</h1>
 		</div>
-		<div>
-			<input type="search">
-			<input type="image" src="">
-			<i class="fa fa-user"></i>
+		<div class="search">
+			<span>
+				<input type="search" placeholder="Buscar por filmes...">
+				<i class="fa fa-search" aria-hidden="true"></i>
+			</span>
 		</div>
-		<div>
-			<p>Olá, visitante</p>
-			<input type="img">
-		</div>
-		<div>
-			<input type="img">
+		<div class="visiting">
+			<div>
+				<p>Olá, visitante</p>
+				<i class="fa fa-user"></i>
+			</div>
+			<div>
+				<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			</div>
 		</div>
 	</header>
-	<i class="fa fa-camera-retro"></i>
+	<nav>
+		<ul>
+			<li><a href="">Filmes</a></li>
+			<li><a href="">Eventos</a></li>
+			<li><a href="">Peças</a></li>
+		</ul>
+	</nav>
 </body>
 </html>
