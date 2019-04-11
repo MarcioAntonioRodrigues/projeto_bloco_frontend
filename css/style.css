@@ -1,11 +1,25 @@
 /* CONFIGURAÇÕES GERAIS */
+body
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url("../images/sala-cinema.jpg");
+}
 
-h1,
+h1
+{
+	color: #ff7300;
+	font-family: 'Lato', sans-serif;
+}
+
 h2,
 p,
-a
+a,
+li,
+i
 {
-	color: black;
+	color: #fff;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
 }
@@ -30,8 +44,8 @@ header
 	width: 100%;
     z-index: 999;
 	position: fixed;
-    background: #fff;
 	display: inline-block;
+	background: rgba(0,0,0,.8);
     border-bottom: 1px solid black;
 }
 
@@ -50,7 +64,23 @@ header div span
 
 header div span:first-child
 {
-	border-right: 1px solid black; 
+	background: #fff;
+}
+
+div.logo
+{
+	padding: 0;
+}
+
+div.logo img
+{
+	width: 4rem;
+}
+
+div.logo img,
+div.logo h1
+{
+	display: inline-block;
 }
 
 div.visiting,
@@ -85,11 +115,18 @@ div.visiting p
 	display: inline;
 }
 
+div.search i
+{
+	color: black;
+    text-shadow: none;
+}
+
 div.search span
 {
 	width: 50%;
 	padding: 10px;
 	border: 1px solid;
+	border-radius: 5px;
 }
 
 div.search span input
@@ -103,6 +140,7 @@ nav
 {
 	position: relative;
 	margin-bottom: 50px;
+	padding: 80px 0 0;
 }
 
 nav ul
@@ -124,22 +162,104 @@ main img
 	box-shadow: 0px 15px 35px -20px rgba(0,0,0,.3);
 }
 
-section
+main figure img
+{
+	padding: 10px 0 0;
+}
+
+main section
 {
 	width: 100%;
 	margin: 30px auto;
 	max-width: 980px;
 }
 
-section ul
+main section ul
 {
 	width: 100%;
 }
 
-section ul li
+main section ul li
 {
     width: 230px;
-	height: 260px;
-	background: yellow;
-    margin: 10px 6px;
+	height: 338px;
+	margin: 10px 5px;
+    border: 1px solid;
+}
+
+main section li
+{
+	transition: 1s;
+}
+
+main section li:hover
+{
+	transform: scale(1.1);
+}
+
+/* footer */
+
+footer
+{
+	width: 100%;
+	background: #252525;
+}
+
+footer div 
+{
+	width: 100%;
+	margin: 0 auto;
+	padding: 5rem 0;
+	max-width: 980px;
+}
+
+footer div section
+{
+	width: 230px;
+	margin: 0px 5px;
+	display: inline-grid;
+}
+
+footer div section:last-child
+{
+	width: 100%;
+	margin-top: 50px;;
+}
+
+footer div section:last-child p
+{
+	font-size: .7rem;
+	margin-top: 5px;
+}
+
+footer div section h2
+{
+	font-size: 1.3rem;
+}
+
+footer div section ul
+{
+	margin-top: .5rem;
+}
+
+footer div section ul li
+{
+	display: block;
+	margin-bottom: .5rem;
+}
+
+footer div section ul li a
+{
+	color: #ff7300;
+}
+
+footer div section ul.social li
+{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+footer div section ul.social li a i
+{
+	color: #ff7300;
 }

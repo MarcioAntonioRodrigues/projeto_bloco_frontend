@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>IngressoOnline - Home</title>
+	<title>IngressoOnline.com - Home</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="images/logo-ticket.png" />
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">	
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 <body>
 	<header>
-		<div>
+		<div class="logo">
+			<img src="images/logo-ticket.png" alt="Ingresso Online">
 			<h1>
 				IngressoOnline.com
 			</h1>
@@ -33,9 +37,9 @@
 	</header>
 	<nav>
 		<ul>
-			<li><a href="">Filmes</a></li>
-			<li><a href="">Eventos</a></li>
-			<li><a href="">Peças</a></li>
+			<li><a href="#">Filmes</a></li>
+			<li><a href="#">Eventos</a></li>
+			<li><a href="#">Peças</a></li>
 		</ul>
 	</nav>
 	<main>
@@ -43,24 +47,56 @@
 			<img src="images/maxresdefault.jpg" alt="Filme Missão impossível">
 			<figcaption></figcaption>
 		</figure>
-		<section>
-			<h2>Em cartaz</h2>
-			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-			</ul>
-		</section>
-		<section>
-			<h2>Em breve</h2>
-			<ul>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-				<li><a href=""></a></li>
-			</ul>
-		</section>
+		<section id="em-cartaz"></section>
+		<section id="em-breve"></section>
 	</main>
+	<footer>
+		<div>
+			<section>
+				<h2>Menu</h2>
+				<ul>
+					<li><a href="#">Filmes</a></li>
+					<li><a href="#">Eventos</a></li>
+					<li><a href="#">Peças</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Institucional</h2>
+				<ul>
+					<li><a href="#">Quem somos</a></li>
+					<li><a href="#">Assessoria de imprensa</a></li>
+					<li><a href="#">Vale presente</a></li>
+				</ul>
+			</section>
+			<section>
+				<h2>Redes sociais</h2>
+				<ul class="social">
+					<li>
+						<a href="http://www.facebook.com">
+							<i class="fa fa-facebook-official" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.instagram.com">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://www.google.com">
+							<i class="fa fa-google-plus-square" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Formas de pagamento</h2>
+				<ul></ul>
+			</section>
+			<section>
+				<p>Ingresso.com Ltda / CNPJ: 00.860.640/0001-71 Endereço: Rua da Quitanda, 86 - 9º andar - Centro - RJ - 20091-005</p>
+				<p>Atendimento ao cliente © 2019 - Copyright Ingresso.com - todos os direitos reservados</p>
+			</section>
+		</div>
+	</footer>
 </body>
 </html>
