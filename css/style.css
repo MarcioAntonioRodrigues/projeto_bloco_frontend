@@ -266,3 +266,46 @@ footer div section ul.social li a i
 {
 	color: #ff7300;
 }
+
+footer div section ul.credit-card li
+{
+	width: 32px;
+	display: inline-block;
+	text-indent: -9999px;
+}
+
+footer div section ul.credit-card li[value*="cirrus"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 52px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
+
+footer div section ul.credit-card li[value*="maestro"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 186px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
+
+footer div section ul.credit-card li[value*="electron"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 254px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
+
+footer div section ul.credit-card li[value*="mastercard"]
+{
+	background-image: url(../images/credit-cards.png);
+    background-position-x: 376px;
+    background-position-y: -2px;
+    height: 40px;
+    width: 50px;
+}
