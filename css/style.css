@@ -161,6 +161,16 @@ nav ul li
 	font-size: 1.3rem;
 }
 
+nav ul li a
+{
+	transition: .5s;
+}
+
+nav ul li a:hover
+{
+	color: #ff7300;
+}
+
 /* main */
 
 main img
@@ -181,6 +191,11 @@ main section
 	margin: 30px auto;
 }
 
+main section h2
+{
+	margin: 0px 5px;
+}
+
 main section ul
 {
 	width: 100%;
@@ -191,7 +206,8 @@ main section ul li
     width: 230px;
 	height: 338px;
 	margin: 10px 5px;
-    border: 1px solid;
+	border: 1px solid;
+	cursor: pointer;
 }
 
 main section li
@@ -223,8 +239,8 @@ footer div
 footer div section
 {
 	width: 230px;
+	margin-top: 25px;
 	display: inline-grid;
-	margin-top: 15px;
 }
 
 footer div section:last-child
@@ -274,8 +290,8 @@ footer div section ul.social li a i
 footer div section ul.credit-card li
 {
 	width: 32px;
-	display: inline-block;
 	text-indent: -9999px;
+	display: inline-block;
 }
 
 footer div section ul.credit-card li[value*="cirrus"]
@@ -332,6 +348,31 @@ footer div section ul.credit-card li[value*="mastercard"]
 	div.shop 
 	{
 		width: 16%;
+	}
+}
+
+@media screen and (max-width: 990px)
+{
+	footer div,
+	main section
+	{
+		max-width: 600px;
+	}
+
+	main section h2
+	{
+		margin: 0 30px;
+	}
+
+	main section ul li,
+	footer div section
+	{
+		margin: 10px 30px;
+	}
+
+	footer div section:last-child
+	{
+		margin: 10px;
 	}
 }
 
