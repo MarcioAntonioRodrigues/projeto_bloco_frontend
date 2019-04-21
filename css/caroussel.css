@@ -22,37 +22,36 @@
     transition: left .25s ease-out;
 }
 
-.next::after,
-.prev::after
+.prev i,
+.next i
 {
     right: 0;
-    top: 50%;
-    width: 1em;
+    top: 50%; 
+    width: 3em;
     height: 3em;
-    content: '>';
     opacity: 0.5;
+    color: gray;
     cursor: pointer;
     padding: 0 .2em;
     font-size: 20px;
     line-height: 3em;
     font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
     position: absolute;
     box-sizing: border-box;
-    font-family: sans-serif; 
     background-color: white;
     transform: translateY(-50%);
-    transition: opacity .1s linear;
+    transition: opacity 1s linear;
 }
 
-.prev:hover::after,
-.next:hover::after
+.prev i
+{
+    left: 0;
+}
+
+.prev:hover i,
+.next:hover i
 {
     opacity: 1;
-}
-
-
-.prev::after
-{
-    content: '<';
-    left: 0;
 }

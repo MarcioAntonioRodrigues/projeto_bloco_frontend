@@ -10,7 +10,7 @@ body
 
 h1
 {
-	color: #1e7dc6;
+	color: #1da1f2;
 	font-family: 'Lato', sans-serif;
 }
 
@@ -25,7 +25,7 @@ li
 }
 i
 {
-	color: #1e7dc6;
+	color: #1da1f2;
 }
 
 ul,
@@ -147,7 +147,7 @@ div.hide-search
 
 nav
 {
-	padding: 80px 0 0;
+	padding: 60px 0 0;
 	position: relative;
 	margin-bottom: 50px;
 }
@@ -171,7 +171,7 @@ nav ul li a
 
 nav ul li a:hover
 {
-	color: #1e7dc6;
+	color: #1da1f2;
 }
 
 /* main */
@@ -262,7 +262,7 @@ footer div section ul li
 
 footer div section ul li a
 {
-	color: #1e7dc6;
+	color: #1da1f2;
 }
 
 footer div section ul.social li
@@ -273,7 +273,27 @@ footer div section ul.social li
 
 footer div section ul.social li a i
 {
-	color: #1e7dc6;
+	color: #1da1f2;
+}
+
+footer div section ul.social li a[href*="http://www.facebook.com"] i
+{
+	color: #4267B2;
+}
+
+footer div section ul.social li a[href*="http://www.instagram.com"] i
+{
+	color: #da9c49;
+}
+
+footer div section ul.social li a[href*="http://www.google.com"] i
+{
+	color: #b35a4a;
+}
+
+footer div section ul.social li a[href*="http://www.twitter.com"] i
+{
+	color: #1da1f2;
 }
 
 footer div section ul.credit-card li
