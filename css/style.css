@@ -10,19 +10,22 @@ body
 
 h1
 {
-	color: #ff7300;
+	color: #1e7dc6;
 	font-family: 'Lato', sans-serif;
 }
 
 h2,
 p,
 a,
-li,
-i
+li
 {
 	color: #fff;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
+}
+i
+{
+	color: #1e7dc6;
 }
 
 ul,
@@ -168,7 +171,7 @@ nav ul li a
 
 nav ul li a:hover
 {
-	color: #ff7300;
+	color: #1e7dc6;
 }
 
 /* main */
@@ -179,9 +182,9 @@ main img
 	box-shadow: 0px 15px 35px -20px rgba(0,0,0,.3);
 }
 
-main figure img
+main figure
 {
-	padding: 10px 0 0;
+	background: #fff;
 }
 
 main section
@@ -193,29 +196,15 @@ main section
 
 main section h2
 {
-	margin: 0px 5px;
-}
-
-main section ul
-{
-	width: 100%;
-}
-
-main section ul li
-{
-    width: 230px;
-	height: 338px;
 	margin: 10px 5px;
-	border: 1px solid;
-	cursor: pointer;
 }
 
-main section li
+main section.image-caroussel img
 {
 	transition: 1s;
 }
 
-main section li:hover
+main section.image-caroussel img:hover
 {
 	transform: scale(1.1);
 }
@@ -273,7 +262,7 @@ footer div section ul li
 
 footer div section ul li a
 {
-	color: #ff7300;
+	color: #1e7dc6;
 }
 
 footer div section ul.social li
@@ -284,7 +273,7 @@ footer div section ul.social li
 
 footer div section ul.social li a i
 {
-	color: #ff7300;
+	color: #1e7dc6;
 }
 
 footer div section ul.credit-card li
@@ -329,6 +318,8 @@ footer div section ul.credit-card li[value*="mastercard"]
     height: 40px;
     width: 50px;
 }
+
+/* area responsiva */
 
 @media screen and (max-width: 1300px)
 {

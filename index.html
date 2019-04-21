@@ -7,11 +7,12 @@
 	<title>IngressoOnline.com - Home</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/caroussel.css">
 	<link rel="shortcut icon" href="images/logo-ticket.png" />
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">	
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<script src="js/jquery.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="js/caroussel.js"></script>
 </head>
 <body>
 	<header>
@@ -52,11 +53,43 @@
 	</nav>
 	<main>
 		<figure>
-			<img src="images/maxresdefault.jpg" alt="Filme Missão impossível">
+			<img id="bigPoster" alt="Filme Missão impossível">
 			<figcaption></figcaption>
 		</figure>
-		<section id="em-cartaz"></section>
-		<section id="em-breve"></section>
+		<section class="image-caroussel">
+			<h2>
+				Em cartaz
+			</h2>
+			<div class="inner">
+				<img src="images/poster001.jpg" alt="">
+				<img src="images/poster002.jpg" alt="">
+				<img src="images/poster003.jpg" alt="">
+				<img src="images/poster004.jpg" alt="">
+				<img src="images/poster001.jpg" alt="">
+				<img src="images/poster002.jpg" alt="">
+				<img src="images/poster003.jpg" alt="">
+				<img src="images/poster004.jpg" alt="">
+			</div>
+			<div class="next"></div>
+			<div class="prev"></div>
+		</section>
+		<section class="image-caroussel">
+			<h2>
+				Em breve
+			</h2>
+			<div class="inner">
+				<img src="images/brief001.jpg" alt="">
+				<img src="images/brief002.jpg" alt="">
+				<img src="images/brief003.jpg" alt="">
+				<img src="images/brief004.jpg" alt="">
+				<img src="images/brief001.jpg" alt="">
+				<img src="images/brief002.jpg" alt="">
+				<img src="images/brief003.jpg" alt="">
+				<img src="images/brief004.jpg" alt="">
+			</div>
+			<div class="next"></div>
+			<div class="prev"></div>
+		</section>
 	</main>
 	<footer>
 		<div>

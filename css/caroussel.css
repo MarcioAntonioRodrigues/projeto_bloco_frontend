@@ -1,0 +1,58 @@
+.image-caroussel
+{
+    width: 100%;
+    height: 400px;
+    max-width: 980px;
+    overflow: hidden;
+    margin: 30px auto;
+    position: relative;
+}
+
+.image-caroussel img
+{
+    margin: 0 6px;
+    border: 1px solid #fff;
+}
+
+.image-caroussel .inner
+{
+    left: 0px;
+    display: flex;
+    position: absolute;
+    transition: left .25s ease-out;
+}
+
+.next::after,
+.prev::after
+{
+    right: 0;
+    top: 50%;
+    width: 1em;
+    height: 3em;
+    content: '>';
+    opacity: 0.5;
+    cursor: pointer;
+    padding: 0 .2em;
+    font-size: 20px;
+    line-height: 3em;
+    font-weight: bold;
+    position: absolute;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    background-color: white;
+    transform: translateY(-50%);
+    transition: opacity .1s linear;
+}
+
+.prev:hover::after,
+.next:hover::after
+{
+    opacity: 1;
+}
+
+
+.prev::after
+{
+    content: '<';
+    left: 0;
+}
