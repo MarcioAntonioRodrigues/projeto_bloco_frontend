@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
     let caroussels = document.getElementsByClassName('image-caroussel');
-    let bigPoster = ['images/maxresdefault.jpg', 'images/avengers.jpg', 'images/justiceleague.jpg'];
+    let bigPoster = ['images/batman.png', 'images/avengers.png', 'images/shazam.png'];
     let time = 6000;
     let bigPosterindex = 0;
 
@@ -45,6 +45,7 @@ $(document).ready(function()
     function automaticChange()
     {
         $('#bigPoster').attr('src', bigPoster[bigPosterindex]);
+        $('#backgroundFigure').css({'backgroundImage': "url(" + bigPoster[bigPosterindex] + ")", "backgroundSize":"cover"});
 
         if(bigPosterindex < bigPoster.length - 1)
         {
@@ -54,10 +55,12 @@ $(document).ready(function()
         {
             bigPosterindex = 0;
         }
-        setTimeout(() => {
-            $('#bigPoster').fadeOut(200);
-            $('#bigPoster').fadeIn(200);
-        }, 5800);
+        // setTimeout(() => {
+        //     $('#bigPoster').slideDown(200);
+        //     $('#bigPoster').slideUp(200);
+        //     $('#backgroundFigure').slideDown(200);
+        //     $('#backgroundFigure').slideUp(200);
+        // }, 5800);
         
         setTimeout(() => {
             automaticChange(); 
