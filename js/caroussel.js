@@ -55,13 +55,6 @@ $(document).ready(function()
         {
             bigPosterindex = 0;
         }
-        // setTimeout(() => {
-        //     $('#bigPoster').slideDown(200);
-        //     $('#bigPoster').slideUp(200);
-        //     $('#backgroundFigure').slideDown(200);
-        //     $('#backgroundFigure').slideUp(200);
-        // }, 5800);
-        
         setTimeout(() => {
             automaticChange(); 
         }, time);
